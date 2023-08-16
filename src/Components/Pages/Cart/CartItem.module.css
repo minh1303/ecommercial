@@ -1,0 +1,55 @@
+.container {
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 40vh repeat(4,1fr);
+    justify-content: flex-start;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 2rem;
+    text-align: center;
+}
+
+.container img {
+    width: 20vh;
+    height: 20vh;
+    margin: auto;
+}
+
+
+.title {
+    max-width: 80%;
+    text-align: left;
+
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.quantity button {
+    padding: 5px;
+    border: 0;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.quantity button:hover {
+    background-color: azure;
+    color: black;
+}
+
+@media (max-width: 1500px) {
+    .description {
+        display: none;
+    }
+
+    .container {
+        grid-template-columns: 40vh repeat(3,1fr);
+
+    }
+}

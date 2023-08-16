@@ -1,0 +1,59 @@
+.main,.container {
+    display: flex;
+    
+}
+
+.main {
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.main img {
+    height: 20vh;
+    width: 20vh;
+}
+
+.container {
+    flex-direction: column;
+    max-width: 50%;
+    gap: 1rem;
+}
+
+
+.container input {
+    width: 2rem;
+}
+
+
+.inputbox {
+    display: flex;
+    gap: 1rem;
+}
+
+.inputbox button {
+    padding: .5rem;
+    border: 0;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.inputbox button:hover {
+    transform: rotate(3deg);
+}
+
+.inputbox button:active {
+    transform: rotate(-3deg);
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .inputbox {
+        justify-content: center;
+    }
+}

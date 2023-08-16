@@ -1,0 +1,35 @@
+.cart {
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.total {
+  align-self: flex-end !important;
+  margin-right: 2rem;
+  background-color: antiquewhite;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.titles {
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 40vh repeat(4, 1fr);
+  justify-content: flex-start;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 1500px) {
+  .titles {
+    display: none;
+  }
+}

@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+
+.nav img {
+    width: 20px;
+    height: 20px;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.nav a[class="active"] {
+    text-decoration: underline;
+}
+
+.animated {
+    transform: scale(9);
+    transition: transform 0.2s;
+}
